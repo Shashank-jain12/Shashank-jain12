@@ -107,7 +107,7 @@
     </div>
     <div id="partner" >
         <h3>Our Partners</h3>
-        <div class="partners clickable" id="9" onclick="click({clickedClass: 'partners', event: 'click', characterName: 'Gus'})">
+        <div class="partners clickable" id="9" onclick="clicked({'event': 'click', 'clickedClasses': 'partners'})">
             <img src="IMG/gusp.png">
             <h5>Gustavo Fring</h5>
             <p>Owner of Los Pollos Harmanos and Superlab</p>
@@ -202,10 +202,11 @@
     <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
 
     <script>
-        const click = (vals) => {
+        function clicked(vals){
             console.log(vals);
         }
     </script>
+
 </body>
 
 </html>
